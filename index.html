@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pragalathan | Java Backend Engineer</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Background Effects -->
+  <div class="bg-orbit orbit-1"></div>
+  <div class="bg-orbit orbit-2"></div>
+  <div class="bg-orbit orbit-3"></div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <span class="logo-dot"></span>
+      <span>Pragalathan</span>
+    </div>
+
+    <nav class="nav-links" id="nav-links">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+      <a href="assets/Pragalathan-Murugesan.pdf" class="btn btn-outline" download>
+        <i class="fa-solid fa-download"></i> Resume
+      </a>
+    </nav>
+
+    <div class="nav-actions">
+      <button id="menu-toggle" class="icon-btn menu-toggle" aria-label="Toggle menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="hero section reveal">
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="tag">Java Backend Engineer · Spring Boot · AWS · IoT · Healthcare</p>
+
+        <h1>
+          Building <span class="accent">scalable</span> &amp;<br />
+          <span class="accent">secure</span> backend systems.
+        </h1>
+
+        <p class="hero-subtitle">
+          I’m <span class="accent">Pragalathan</span>, a backend engineer crafting high-performance APIs,
+          microservices, and IoT/IoMT-driven platforms for real-world products.
+        </p>
+
+        <div class="hero-typed">
+          <span class="label">Currently working on</span>
+          <span id="typed-text"></span><span class="cursor">|</span>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn">
+            <i class="fa-solid fa-code"></i> View My Work
+          </a>
+          <a href="#contact" class="btn ghost">
+            <i class="fa-solid fa-paper-plane"></i> Let’s Connect
+          </a>
+        </div>
+
+        <div class="hero-meta">
+          <div class="meta-card">
+            <span class="meta-label">Experience</span>
+            <span class="meta-value">2.8+ yrs</span>
+          </div>
+          <div class="meta-card">
+            <span class="meta-label">Primary Stack</span>
+            <span class="meta-value">Java · Spring Boot · AWS</span>
+          </div>
+          <div class="meta-card">
+            <span class="meta-label">Domains</span>
+            <span class="meta-value">IoT · IoMT · Fleet</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-card glass floating">
+          <div class="hero-card-header">
+            <span class="status-dot"></span>
+            <span>System Status</span>
+          </div>
+          <div class="hero-card-body">
+            <div class="metric">
+              <span class="metric-label">API Latency</span>
+              <span class="metric-value">&lt; 120ms</span>
+            </div>
+            <div class="metric">
+              <span class="metric-label">Uptime</span>
+              <span class="metric-value">99.9%</span>
+            </div>
+            <div class="metric">
+              <span class="metric-label">Requests / day</span>
+              <span class="metric-value">1M+</span>
+            </div>
+            <div class="tech-pills">
+              <span>Java</span>
+              <span>Spring Boot</span>
+              <span>Spring Cloud</span>
+              <span>PostgreSQL</span>
+              <span>DynamoDB</span>
+              <span>AWS</span>
+              <span>Quarkus</span>
+            </div>
+          </div>
+        </div>
+
+        <div id="iot-animation" class="iot-animation"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section reveal">
+    <div class="section-header">
+      <p class="tag">About</p>
+      <h2>Who I Am</h2>
+      <p class="section-subtitle">
+        Backend-focused engineer who enjoys solving complex problems with clean, maintainable code.
+      </p>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text glass">
+        <p>
+          Java and Spring Boot Developer with <strong>2+ years</strong> of experience in backend development.
+          I’ve worked on <strong>fleet management systems</strong> and <strong>IoMT-based medical device integration</strong>,
+          building microservices, APIs, and real-time data pipelines.
+        </p>
+        <p>
+          I specialize in <strong>REST API design</strong>, <strong>microservices architecture</strong>,
+          <strong>cloud-native development on AWS</strong>, and <strong>secure data communication</strong> using
+          protocols like <strong>TCP/IP</strong> and <strong>BLE</strong>.
+        </p>
+        <p>
+          Strong in <strong>PostgreSQL</strong>, <strong>DynamoDB</strong>, and <strong>Timestream</strong>, with a focus on
+          performance, observability, and production-grade reliability.
+        </p>
+      </div>
+
+      <div class="about-highlights">
+        <div class="highlight-card glass">
+          <span class="highlight-icon"><i class="fa-solid fa-diagram-project"></i></span>
+          <h3>System Design</h3>
+          <p>REST APIs, microservices, data models, and event-driven backend systems.</p>
+        </div>
+        <div class="highlight-card glass">
+          <span class="highlight-icon"><i class="fa-solid fa-cloud-arrow-up"></i></span>
+          <h3>Cloud Native</h3>
+          <p>AWS-first mindset with focus on scalability, high availability, and cost optimization.</p>
+        </div>
+        <div class="highlight-card glass">
+          <span class="highlight-icon"><i class="fa-solid fa-microchip"></i></span>
+          <h3>IoT / IoMT</h3>
+          <p>BLE, TCP/IP, WebSockets for real-time telemetry and healthcare integrations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="section reveal">
+    <div class="section-header">
+      <p class="tag">Education</p>
+      <h2>Academic Background</h2>
+    </div>
+
+    <div class="projects-grid">
+      <article class="project-card glass">
+        <h3>Master of Computer Applications (MCA)</h3>
+        <p><strong>Annai College of Arts and Science, Kumbakonam</strong></p>
+        <p class="muted">June 2021 – Apr 2023</p>
+      </article>
+
+      <article class="project-card glass">
+        <h3>Bachelor of Computer Applications (BCA)</h3>
+        <p><strong>Mass College of Arts and Science, Kumbakonam</strong></p>
+        <p class="muted">June 2018 – Apr 2021</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section reveal">
+    <div class="section-header">
+      <p class="tag">Skills</p>
+      <h2>Tech Stack</h2>
+      <p class="section-subtitle">Tools and technologies I work with on a daily basis.</p>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-card glass">
+        <h3>Languages</h3>
+        <div class="pill-row">
+          <span>Java</span>
+          <span>SQL</span>
+          <span>JavaScript</span>
+          <span>TypeScript</span>
+        </div>
+      </div>
+
+      <div class="skill-card glass">
+        <h3>Backend Frameworks</h3>
+        <div class="pill-row">
+          <span>Spring Boot</span>
+          <span>Spring Security</span>
+          <span>Spring Data JPA</span>
+          <span>Spring Cloud</span>
+          <span>Spring MVC</span>
+          <span>Hibernate / ORM</span>
+          <span>JDBC</span>
+          <span>Microservices</span>
+          <span>Quarkus</span>
+        </div>
+      </div>
+
+      <div class="skill-card glass">
+        <h3>Frontend</h3>
+        <div class="pill-row">
+          <span>React</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>TypeScript</span>
+        </div>
+      </div>
+
+      <div class="skill-card glass">
+        <h3>Cloud & Infra</h3>
+        <div class="pill-row">
+          <span>AWS EC2</span>
+          <span>Lambda</span>
+          <span>API Gateway</span>
+          <span>S3</span>
+          <span>DynamoDB</span>
+          <span>Timestream DB</span>
+          <span>CloudWatch</span>
+          <span>IAM</span>
+          <span>LocalStack</span>
+        </div>
+      </div>
+
+      <div class="skill-card glass">
+        <h3>Databases</h3>
+        <div class="pill-row">
+          <span>PostgreSQL</span>
+          <span>DynamoDB</span>
+          <span>Timestream</span>
+        </div>
+      </div>
+
+      <div class="skill-card glass">
+        <h3>Tools & IDEs</h3>
+        <div class="pill-row">
+          <span>IntelliJ IDEA</span>
+          <span>WebStorm</span>
+          <span>VS Code</span>
+          <span>Eclipse</span>
+          <span>Postman</span>
+          <span>Wireshark</span>
+          <span>Git</span>
+          <span>GitHub</span>
+          <span>Docker</span>
+          <span>Docker Hub</span>
+          <span>Netlify</span>
+          <span>Render</span>
+        </div>
+      </div>
+
+      <div class="skill-card glass">
+        <h3>Protocols & Formats</h3>
+        <div class="pill-row">
+          <span>REST</span>
+          <span>WebSocket</span>
+          <span>TCP/IP</span>
+          <span>BLE</span>
+          <span>JSON</span>
+          <span>XML</span>
+          <span>JWT</span>
+          <span>AES Encryption</span>
+        </div>
+      </div>
+
+      <div class="skill-card glass">
+        <h3>Healthcare & IoMT</h3>
+        <div class="pill-row">
+          <span>Remote Patient Monitoring</span>
+          <span>BLE Medical Devices</span>
+          <span>Protocol Reverse Engineering</span>
+          <span>HL7 Data Mapping</span>
+          <span>Android BluetoothGatt</span>
+        </div>
+      </div>
+
+      <div class="skill-card glass">
+        <h3>Other</h3>
+        <div class="pill-row">
+          <span>Android App Development</span>
+          <span>Unit Testing (JUnit)</span>
+          <span>Mockito</span>
+          <span>Agile / Scrum</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section reveal">
+    <div class="section-header">
+      <p class="tag">Experience</p>
+      <h2>Work Experience</h2>
+    </div>
+
+    <div class="projects-grid">
+      <article class="project-card glass">
+        <h3>Software Engineer · Backend</h3>
+        <p class="muted">July 2023 – Present</p>
+        <ul class="project-points">
+          <li>Built and maintained backend services for fleet and IoMT applications using Java, Spring Boot, Spring Cloud, and Quarkus.</li>
+          <li>Developed secure and scalable REST APIs with Spring Security, JWT, and role-based access control.</li>
+          <li>Managed IoT/IoMT device data integration using AWS (S3, EC2, ECR, DynamoDB, Timestream) and PostgreSQL.</li>
+          <li>Implemented real-time communication with WebSockets, TCP/IP, and BLE for live telemetry visualization.</li>
+          <li>Improved incident resolution time by collaborating across mobile, QA, and product teams in Agile sprints.</li>
+          <li>Ensured 99.9% uptime via monitoring, alerting, and performance optimization.</li>
+        </ul>
+      </article>
+
+      <article class="project-card glass">
+        <h3>Backend Developer · Intern</h3>
+        <p class="muted">Feb 2023 – Jun 2023</p>
+        <ul class="project-points">
+          <li>Designed and implemented RESTful APIs using Spring Boot, Spring Data JPA, and Spring Security.</li>
+          <li>Worked with PostgreSQL for schema design, query optimization, and data handling in high-traffic flows.</li>
+          <li>Implemented role-based authentication and authorization for secure API access.</li>
+          <li>Wrote unit and integration tests using JUnit and Mockito to maintain code quality and stability.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section reveal">
+    <div class="section-header">
+      <p class="tag">Projects</p>
+      <h2>Featured Work</h2>
+      <p class="section-subtitle">
+        Real-world systems where I’ve contributed to backend architecture and implementation.
+      </p>
+    </div>
+
+    <div class="projects-grid">
+      <article class="project-card glass">
+        <div class="project-tag">IoT · Fleet</div>
+        <h3>Fleet Management Platform</h3>
+        <p>
+          Backend system for live vehicle tracking, route analytics, and driver behavior insights using IoT data.
+        </p>
+        <ul class="project-points">
+          <li>Built microservices for geofence management, route optimization, and trip tracking.</li>
+          <li>Designed REST APIs for trip creation, updates, and monitoring to support real-time dashboards.</li>
+          <li>Used AWS (S3, DynamoDB, Timestream), PostgreSQL, and caching for performant data access.</li>
+          <li>Implemented alerts for loading/moving/stopping events to improve safety and compliance.</li>
+        </ul>
+        <div class="project-tech">
+          <span>Java</span><span>Spring Boot</span><span>Spring Cloud</span>
+          <span>PostgreSQL</span><span>AWS</span><span>REST APIs</span><span>Microservices</span>
+        </div>
+      </article>
+
+      <article class="project-card glass">
+        <div class="project-tag">IoMT · Healthcare</div>
+        <h3>IoMT Medical Device Integration Platform</h3>
+        <p>
+          End-to-end backend for integrating medical devices with cloud applications for real-time patient monitoring.
+        </p>
+        <ul class="project-points">
+          <li>Developed IoMT applications using BLE to collect and transmit real-time health data.</li>
+          <li>Reverse-engineered proprietary protocols using Wireshark and implemented binary parsers.</li>
+          <li>Streamed vitals using WebSockets via AWS API Gateway and Lambda; stored data in Timestream for analysis.</li>
+          <li>Built secure APIs for remote device control and automated bedside diagnostics.</li>
+        </ul>
+        <div class="project-tech">
+          <span>Quarkus</span><span>Java</span><span>BLE</span><span>TCP/IP</span>
+          <span>AWS Lambda</span><span>API Gateway</span><span>WebSocket</span>
+          <span>DynamoDB</span><span>Timestream</span><span>AES Encryption</span><span>JWT</span>
+        </div>
+      </article>
+
+      <article class="project-card glass">
+        <div class="project-tag">Android · IoMT</div>
+        <h3>Android Integration with BLE Diagnostic Devices</h3>
+        <p>
+          Android-side and backend support for multiple diagnostic peripherals communicating via BLE.
+        </p>
+        <ul class="project-points">
+          <li>Implemented Android BluetoothGatt flows for scanning, pairing, and read/write operations.</li>
+          <li>Created secure GATT-compliant handlers with AES-encrypted payloads.</li>
+          <li>Streamed BLE data to web and mobile apps using WebSocket and cloud-native services.</li>
+        </ul>
+        <div class="project-tech">
+          <span>Android</span><span>Java</span><span>BLE</span><span>WebSocket</span><span>AWS</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Resume Preview -->
+  <section id="resume" class="section reveal">
+    <div class="section-header">
+      <p class="tag">Resume</p>
+      <h2>Preview</h2>
+      <p class="section-subtitle">You can quickly view or download my latest resume here.</p>
+    </div>
+
+    <div class="resume-wrapper glass">
+      <iframe
+        src="assets/Pragalathan-Murugesan.pdf"
+        title="Resume Preview"
+        class="resume-frame"
+      ></iframe>
+    </div>
+
+    <div class="resume-actions">
+      <a href="assets/Pragalathan-Murugesan.pdf" class="btn" download>
+        <i class="fa-solid fa-download"></i> Download Resume
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section reveal">
+    <div class="section-header">
+      <p class="tag">Contact</p>
+      <h2>Let’s Build Something</h2>
+      <p class="section-subtitle">
+        Open to opportunities, collaborations, and interesting backend challenges.
+      </p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-card glass">
+        <h3>Reach Out</h3>
+        <p>📧 <a href="mailto:pragalathanp872@gmail.com">pragalathanp872@gmail.com</a></p>
+        <p>📞 <a href="tel:+919047397741">+91 90473 97741</a></p>
+      </div>
+
+      <div class="contact-card glass">
+        <h3>Social Links</h3>
+        <div class="social-links">
+          <a href="https://github.com/Pragalathan-Murugesan" target="_blank">
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/pragalathan-murugesan-b64893218/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+            <a href="https://www.facebook.com/pragalathan.pragalathan.986" target="_blank">
+    <i class="fa-brands fa-facebook"></i> Facebook
+  </a>
+
+  <a href="https://www.instagram.com/itsme_pragalathan_balaji/" target="_blank">
+    <i class="fa-brands fa-instagram"></i> Instagram
+  </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2021 · Pragalathan Murugesan · Java Backend Engineer</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
